@@ -1,0 +1,7 @@
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|pht|phar)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "\.svg$">
+    Header set Content-Disposition "attachment"
+</FilesMatch>
