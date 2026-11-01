@@ -8,11 +8,11 @@
 
 /* Update your body style to include a full-screen background image */
 body {
-    background-image: url('../images/background.jpg'); /* ../ goes back one folder to locate /images/ */
+    /* background-image: url('../images/background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,7 +62,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 
 .btn {
     display: inline-block;
-    background: #3498db;
+    background: #0047c5;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -155,19 +155,8 @@ th {
 }
 
 
-
-/* ==================================================== */
-/* FORCE NEW BACKGROUND & TRANSPARENT CONTAINERS GLOBALLY */
-/* ==================================================== */
-
-/* ==================== FORCE NEW BACKGROUND ==================== */
 html, body {
-    background-color: #eaeced !important; /* Fallback color */
-    background-image: url('../images/background-texture.jpg') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -191,4 +180,27 @@ table {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.nav-header {
+    background-color: #0047C5!important;
+    height: 68px;
+}
+
+.site-logo {
+    height: 39px;
+}
+
+.product-image-container {
+    min-height: 200px;
+    max-height: 219px;
+}
+
+.product-card-body {
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.container-wrapper {
+    margin: 0 20px 0 20px;
 }

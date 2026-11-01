@@ -67,7 +67,6 @@ function product_images(string $raw): array {
             overflow: hidden; 
             display: flex;
             flex-direction: column;
-            padding: 0 20px;
             background: transparent !important; /* Forces background to show */
         }
 
@@ -102,11 +101,11 @@ function product_images(string $raw): array {
         .header-center {
             flex: 0 0 auto;
             display: flex;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
         }
         .site-logo {
-            height: 75px;
+            /* height: 75px; */
             width: auto;
             object-fit: contain;
             background: white;
@@ -123,8 +122,16 @@ function product_images(string $raw): array {
             gap: 10px;
             margin: 20px 0 15px 0;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: center;
             width: 100%;
+
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            @media (max-width: 640px) {
+                gap: 5px 34px;
+            }
         }
         .filter-badge {
             padding: 8px 14px;
@@ -188,7 +195,7 @@ function product_images(string $raw): array {
         }
         .product-price { font-size: 1.05rem; color: #2ecc71; font-weight: bold; margin: 4px 0; }
 
-        .product-image-container {
+        .product-image-© {
             position: relative;
             width: 50%;
             aspect-ratio: 1 / 1;
@@ -479,20 +486,20 @@ function product_images(string $raw): array {
         /* ==================== Responsive: mobile/tablet ==================== */
         @media (max-width: 900px) {
             .nav-header {
-                flex-direction: column;
+                /* flex-direction: column;
                 align-items: stretch;
-                gap: 10px;
+                gap: 10px; */
                 text-align: center;
                 padding: 10px;
             }
-            .header-left, .header-right {
+            /* .header-left, .header-right {
                 flex: 0 0 auto;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-            }
+            } */
             .header-center { order: -1; }
-            .site-logo { height: 62px; }
+            /* .site-logo { height: 62px; } */
 
             .product-image-container { width: 40%; }
             .img-nav { width: 42px; height: 42px; font-size: 18px; background: rgba(255,255,255,0.95); }
@@ -508,10 +515,10 @@ function product_images(string $raw): array {
         }
 
         @media (max-width: 640px) {
-            body > .crud-container { padding: 0 10px; }
+            /* body > .crud-container { padding: 0 10px; } */
             .product-grid { grid-template-columns: 1fr; justify-content: stretch; }
             .product-card { width: 100%; }
-            .product-image-container { width: 32%; }
+            .product-image-container { width: 100%; }
             .img-nav { width: 44px; height: 44px; font-size: 20px; border-width: 2px; }
             .img-nav.prev { left: 4px; }
             .img-nav.next { right: 4px; }
@@ -527,7 +534,7 @@ function product_images(string $raw): array {
     <div class="crud-container">
         <!-- Sticky Header -->
         <div class="nav-header">
-            <div class="header-left"></div>
+            <!-- <div class="header-left"></div> -->
             <div class="header-center">
                 <img src="images/logo_horizontal.png" alt="Gadgets Universe Logo" class="site-logo">
             </div>
