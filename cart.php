@@ -52,13 +52,13 @@ if (!empty($_SESSION['cart'])) {
     <link rel="stylesheet" href="css/style.css">
     <style>
     /* Force the background */
-    body {
+    /* body {
         background-image: url('images/background-texture.jpg') !important;
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
-    }
+    } */
     
     /* Make wrappers transparent */
     .crud-container, 

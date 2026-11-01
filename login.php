@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         /* Force the new texture background */
         body {
-            background-image: url('images/background-texture.jpg') !important;
+            /* background-image: url('images/background-texture.jpg') !important;
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
@@ -65,7 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center; */
+
+            background-color: #dae0ea;
         }
 
         /* Frosted glass container to make the form stand out */

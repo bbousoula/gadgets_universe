@@ -56,11 +56,7 @@ $items = $items_stmt->fetchAll(PDO::FETCH_ASSOC);
     <style>
     /* Force the background */
     body {
-        background-image: url('images/background-texture.jpg') !important;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important;
+        background-color: #dae0ea;
     }
     
     /* Make wrappers transparent */

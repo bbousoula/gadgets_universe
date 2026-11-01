@@ -55,11 +55,7 @@ $past_takes = $conn->query("SELECT * FROM inventory_takes ORDER BY take_date DES
     <style>
     /* Force the background */
     body {
-        background-image: url('images/background-texture.jpg') !important;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important;
+        background-color: #dae0ea;
     }
     
     /* Make wrappers transparent */
