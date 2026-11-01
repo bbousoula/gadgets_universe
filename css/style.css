@@ -192,8 +192,8 @@ table {
 }
 
 .product-image-container {
-    min-height: 200px;
-    max-height: 219px;
+    height: 200px;
+    position: relative;
 }
 
 .product-card-body {
